@@ -51,5 +51,5 @@ const foodCategories: FoodCategory[] = [
   'beverages',
 ];
 
-export type { Menu, FoodCategory };
+export type { Menu, FoodCategory, MenuItem };
 export { foodCategories };

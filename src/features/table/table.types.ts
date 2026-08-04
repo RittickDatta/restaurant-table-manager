@@ -38,4 +38,4 @@ interface Table {
   reservation: Reservation;
 }
 
-export type { Table };
+export type { Table, TableType };

@@ -5,7 +5,7 @@ interface Person {
   email: string;
   phone?: string;
   role: Role;
-  iChild: boolean;
+  iChild?: boolean;
 }
 
 type RegisteredPerson = Person & {
