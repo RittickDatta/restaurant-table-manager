@@ -7,7 +7,6 @@ export type MenuAndOrdersStore = {
   menu: Menu;
   orders: Order[];
 
-  //   getMenu: () => Menu;
   addDishByCategory: (category: FoodCategory, item: MenuItem) => void;
   updateDishByCategory: (
     category: FoodCategory,

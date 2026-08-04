@@ -4,9 +4,6 @@ import { create } from 'zustand';
 export type PeopleStore = {
   people: RegisteredPerson[];
 
-  //   getPeople: () => Person[];
-  //   getPeopleByRole: () => Person[];
-  //   getPersonById: (id: number) => Person;
   addPerson: (person: RegisteredPerson) => void;
   updatePerson: (id: number, person: Partial<Person>) => void;
   deletePerson: (id: number) => void;

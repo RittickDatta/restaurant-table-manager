@@ -1,22 +1,21 @@
 import type { FoodCategory } from '../menu/menu.types';
 
-type OrderItemStatus = 'idle' | 'inProgress' | 'returned' | 'complete'
-type TableandItemId = `Table-${number}:Item-${number}`
+type OrderStatus = 'idle' | 'inProgress' | 'returned' | 'complete';
+type TableandItemId = `Table-${number}:Item-${number}`;
 type OrderItem = {
-  id: TableandItemId,
+  id: TableandItemId;
   dishCategory: FoodCategory;
   dishName: string;
 
   quantity: number;
   price: number;
 
-  specialInstructions:  string;
-  status: OrderItemStatus;
+  specialInstructions: string;
+  status: OrderStatus;
 
   startedAt: Date;
   completedAt: Date;
 };
-
 
 interface Order {
   id: number;

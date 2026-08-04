@@ -10,6 +10,8 @@ type TableType =
   | 'ten-seator'
   | 'twelve-seator';
 
+type TableStatus = 'available' | 'occupied' | 'reserved';
+
 type Reservation = {
   isReserved: boolean;
   reservationDetails: ReservationDetails;
@@ -31,11 +33,12 @@ interface Table {
   type: TableType;
   capacity: number;
 
-  isOccupied: boolean;
+  status: TableStatus;
+
   numberOfGuests: number;
   freeChairs: number;
 
-  reservation: Reservation;
+  reservation: Reservation | null;
 }
 
-export type { Table, TableType };
+export type { Table, TableType, TableStatus, Reservation, ReservationDetails };
