@@ -21,6 +21,7 @@ type PersonErrors = Record<PersonFields, string>;
 
 export type {
   Person,
+  Role,
   RegisteredPerson,
   PersonContact,
   PersonDisplayInfo,

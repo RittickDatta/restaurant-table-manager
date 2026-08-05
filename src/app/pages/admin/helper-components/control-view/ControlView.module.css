@@ -1,0 +1,24 @@
+.controlView {
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding-bottom: var(--space-4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.controlViewActions {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--space-4);
+}

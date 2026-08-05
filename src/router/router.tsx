@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import RootLayout from '@/app/layout/RootLayout';
-import Admin from '@/app/pages/Admin';
+import Admin from '@/app/pages/admin/Admin';
 
 import Home from '@/app/components/Home';
 
@@ -11,7 +11,7 @@ import StaffDetails from '@/app/pages/staff/staff-details/StaffDetails';
 import Tables from '@/app/pages/tables/Tables';
 import TableDetails from '@/app/pages/tables/table-details/TableDetails';
 
-import Menu from '@/app/pages/Menu';
+import Menu from '@/app/pages/menu/Menu';
 
 import Orders from '@/app/pages/orders/Orders';
 import ViewOrder from '@/app/pages/orders/view/ViewOrder';

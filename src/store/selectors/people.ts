@@ -1,8 +1,9 @@
+import type { Role } from '@/features/people/people.types';
 import type { PeopleStore } from '@/store/people-store';
 
 export const getPeople = (store: PeopleStore) => store.people;
 
-export const getPeopleByRole = (store: PeopleStore, role: string) =>
+export const getPeopleByRole = (store: PeopleStore, role: Role) =>
   store.people.filter((person) => person.role === role);
 
 export const getPersonById = (store: PeopleStore, id: number) =>
