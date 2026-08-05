@@ -1,0 +1,22 @@
+.Button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background-color: #f0f0f0;
+        cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+    }
+
+    &:active {
+        background-color: #e0e0e0;
+    }
+
+    &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+}
