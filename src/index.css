@@ -1,4 +1,16 @@
 :root {
+
+
+
+  --app-bg: #f4f2eee9;
+
+  --color-primary: #051520;
+  --color-secondary: #0B2B26;
+  --color-tertiary: #163832;
+  --color-accent: #235347;
+  --color-accent-light: #8EB69B;
+  --color-light: #DAF1DE;
+
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -21,6 +33,10 @@
   --space-4: 1rem;
   --space-5: 1.5rem;
   --space-6: 2rem;
+
+  --font-size-1: 0.75rem;
+  --font-size-2: 1rem;
+  --font-size-3: 1.25rem;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
