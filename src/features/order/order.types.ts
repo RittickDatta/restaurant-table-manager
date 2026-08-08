@@ -1,6 +1,6 @@
 import type { FoodCategory } from '../menu/menu.types';
 
-type OrderStatus = 'idle' | 'inProgress' | 'returned' | 'complete';
+export type OrderStatus = 'idle' | 'inProgress' | 'returned' | 'complete';
 type TableandItemId = `Table-${number}:Item-${number}`;
 type OrderItem = {
   id: TableandItemId;
