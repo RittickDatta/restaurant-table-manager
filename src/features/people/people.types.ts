@@ -10,6 +10,7 @@ interface Person {
 
 type RegisteredPerson = Person & {
   id: number;
+  isAbsent?: boolean | undefined;
 };
 
 type PersonContact = Pick<Person, 'email' | 'phone'>;

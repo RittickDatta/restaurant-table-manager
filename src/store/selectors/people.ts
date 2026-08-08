@@ -3,11 +3,14 @@ import type { PeopleStore } from '@/store/people-store';
 
 export const getPeople = (store: PeopleStore) => store.people;
 
-export const getPeopleByRole = (store: PeopleStore, role: Role) =>
+export const getPeopleByRole = (role: Role) => (store: PeopleStore) =>
   store.people.filter((person) => person.role === role);
 
 export const getPersonById = (store: PeopleStore, id: number) =>
   store.people.find((person) => person.id === id);
+
+export const getPeoplePresent = (store: PeopleStore) => 
+  store.people.filter((person) => !person.isAbsent)
 
 export const getPersonsContactInfoById = (store: PeopleStore, id: number) =>
   store.people
