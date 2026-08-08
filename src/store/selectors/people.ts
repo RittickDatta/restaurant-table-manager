@@ -6,13 +6,13 @@ export const getPeople = (store: PeopleStore) => store.people;
 export const getPeopleByRole = (role: Role) => (store: PeopleStore) =>
   store.people.filter((person) => person.role === role);
 
-export const getPersonById = (store: PeopleStore, id: number) =>
+export const getPersonById = (id: number) => (store: PeopleStore) =>
   store.people.find((person) => person.id === id);
 
 export const getPeoplePresent = (store: PeopleStore) => 
   store.people.filter((person) => !person.isAbsent)
 
-export const getPersonsContactInfoById = (store: PeopleStore, id: number) =>
+export const getPersonsContactInfoById = (id: number) => (store: PeopleStore) =>
   store.people
     .filter((person) => person.id === id)
     .map((person) => ({
@@ -20,10 +20,7 @@ export const getPersonsContactInfoById = (store: PeopleStore, id: number) =>
       phone: person.phone,
     }));
 
-export const isChildById = (store: PeopleStore, id: number) =>
+export const isChildById = (id: number) => (store: PeopleStore) =>
   store.people.some((person) => person.id === id && person.iChild);
 
-export const isAnyChildInGroup = (store: PeopleStore, ids: number[]) =>
-  store.people.some(
-    (person) => ids.includes(person.id) && person.iChild === true,
-  );
+
